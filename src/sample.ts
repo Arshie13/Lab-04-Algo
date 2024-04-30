@@ -5,9 +5,8 @@ const width: number = 400;
 const height: number = 400;
 const padding: number = 25;
 
-let sketch = function (p) {
+let sketch = function (p: p5) {
   
-
   p.setup = function () {
     p.createCanvas(width, height);
 
@@ -19,7 +18,6 @@ let sketch = function (p) {
     p.strokeWeight(4 / height);
     p.translate(padding, height - padding + 20)
     p.scale(height - padding - 5, -(height - padding - 5));
-
 
     p.stroke("black");
     // Make your points here:

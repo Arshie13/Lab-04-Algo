@@ -50,7 +50,7 @@ class KDTree {
   }
 
   public contains(p: Point2D): boolean {
-    return true;
+    return this.getDirection(this.root, p) !== null;
   }
 
   getDirection(x: TreeNode | null, p: Point2D) {

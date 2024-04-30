@@ -1,3 +1,5 @@
+import p5 from "p5";
+
 class Point2D {
   x: number;
   y: number;
@@ -39,7 +41,7 @@ class Point2D {
     return this.x === that.x && this.y === that.y;
   }
 
-  public draw(p): void {
+  public draw(p: p5): void {
     p.point(this.x, this.y);
   }
 
